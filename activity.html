@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeohaeng Seoul</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport"  content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+  rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <!--Fonts-->
+  <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Nanum+Myeongjo' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet'>
+  
+  <!--Map-->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
+  <!--JQ-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="style.css">
+
+  
+</head>
+<body>
+
+<!--Navbar-->
+<nav class="navbar sticky-top fixed-top navbar-expand-lg">
+  <div class="container">
+      <a href="index.html" class="navbar-brand"><img src="logo2.svg" alt="yeohaeng travel seoul"></a>
+
+      <button class="navbar-toggler" type="button" 
+      data-bs-toggle="collapse" data-bs-target="#navmenu">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-5">
+              <li class="nav-item">
+                  <a href="bookings.html" class="nav-link" target="_blank">Bookings</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#one" class="nav-link" target="_blank">Activities</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="explore.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Explore
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="dobonggu.html">Dobong-gu</a></li>
+                  <li><a class="dropdown-item" href="dongdaemun.html">Dongdaemun-gu</a></li>
+                </ul>
+              </li>
+          </ul>
+
+          <form class="d-flex ms-auto"><!--ms auto pushes the element to the left (spacing)-->
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn" type="submit">Search</button>
+          </form>
+      
+      </div>
+  </div> 
+</nav>
+
+<!--covid-->
+<section class= "p-3 cov">
+     <a href="guidelines.html"><h3 class="text-center">Click Here To Know More About COVID-19 Guidelines</h3></a>
+</section>
+
+<!--Part 1-->
+<section class="one p-3">
+<!--
+<div class="container"><!for the text and items on the bg
+  <div class=" d-sm-flex justify-content-between">-->
+  
+ <div class="container activities">
+  <div class="row">
+    <div class="col-md-8">
+
+
+    <div class="text">
+      <h1><b>Things to do when you visit Seoul</b>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+        </svg>
+      </h1></div>
+      <ul class="activity">
+
+        <div id="lotteworld" class = "activity">
+        <li><h3>Have the time of your life at Lotte World</h3>
+          <img src="https://static.tripzilla.com/thumb/d/d/168669_800x.jpg" class="p-3">
+          <h5 class="p-3">
+            Lotte World is the world’s largest indoor amusement park. Comprising both an indoor theme park and an outdoor amusement park, Lotte World is also surrounded by a hotel and a large shopping complex!
+
+            This top-notch attraction is great for families, kids and couples alike. Lotte World is more than just an ordinary theme park, it’s a massive entertainment hub that promises fun in epic proportions!
+          </h5>
+          <h6 class="p-3"><i>
+            Getting there: 240 Olympic-ro Songpa-Gu, Seoul, Korea. The park is connected to Jamsil Station on Line 2 and Line 8 of the Subway. Take Exit 4 and head to Lotte World.
+          </i></h6>
+        </li></div>
+
+        <div id="myeongdong" class = "activity">
+        <li><h3>Buy cosmetics at Myeongdong</h3>
+          <img src="https://www.ivisitkorea.com/wp-content/uploads/2019/10/Myeongdong-1200x686.webp" class="p-3">
+          <h5 class="p-3">
+            Myeongdong is a cosmetic lover’s paradise. You can find all the popular Korean cosmetic brands in Myeongdong, from Innisfree and Etude House to Tony Moly and MISSHA. Look out for the 1+1 (buy one get one free) offers, and don’t be shy to go around collecting free samples!
+          </h5>
+          <h6 class="p-3"><i>
+            Getting there: Myeong-dong Station (Subway Line 4), Exit 5, 6, 7, or 8 / Euljiro Il-ga Station (Subway Line 2), Exit 5.
+          </i></h6>
+        </li></div>
+        
+        <div id="bukchonhanok" class = "activity">
+        <li><h3>Explore Bukchon Hanok Village</h3>
+          <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2019/03/FotoJet-30.jpg" class="p-3">
+          <h5 class="p-3">
+            The Bukchon Hanok Village is one of my favourite photo spots in Seoul. The traditional hanok houses found here date all the way back to the Joseon Dynasty, and people actually live in them! This picturesque residential area is nestled in the heart of the city between Gyeongbokgung Palace and Changdeokgung Palace, and from atop the hill, you can see a background of modern buildings in the distance.
+          </h5>
+          <h6 class="p-3"><i>
+            Getting there: Anguk Station (Subway Line 3), Exit 2.<br>
+            Tip: Get a map at the Tourist Information Centre!
+          </i></h6>
+        </li></div>
+
+        <div id="guardchange" class = "activity">
+        <li><h3>Catch the guard changing ceremony at Gyeongbokgung Palace</h3>
+          <img src=" https://www.easytourchina.com/images/Photo/guard-changing-ceremony/p464_d20151117144145.jpg" class="p-3">
+          <h5 class="p-3">
+            When visiting the Gyeongbokgung Palace, don’t miss out on observing the Royal Guard Changing Ceremony or the Gwanghwamun Gate Guard-on-Duty Performance. Either one happens every hour between 10am to 4pm at the Gyeongbokgung Palace, every day except Tuesdays.
+          </h5>
+          <h6 class="p-3"><i>
+            Getting there: Gyeongbokgung Palace Station (Subway Line 3), Exit 5 / Gwanghwamun Station (Subway Line 5), Exit 2.
+          </i></h6>
+        </li></div> 
+        
+        <div id="gatekeeper" class = "activity">
+        <li><h3>Put a gatekeeper costume on at Gyeongbokgung Palace</h3>
+          <img src="http://2.bp.blogspot.com/-vs803544gyA/VXEBIryShEI/AAAAAAAABk4/ed1IwKp9T8s/s1600/1.jpg" class="p-3">
+          <h5 class="p-3">
+            Right before and after the ceremonies mentioned above, visitors can don a gatekeeper’s costume at the Sumunjangcheong Building, located behind the Gwanghwamun Gate. You have no reason not to do this – the Sumungun (Gatekeeper) Costume Experience is absolutely free!
+          </h5>
+          <h6 class="p-3"><i>
+            Getting there: Gyeongbokgung Palace Station (Subway Line 3), Exit 5 / Gwanghwamun Station (Subway Line 5), Exit 2.
+          </i></h6>
+        </li></div>
+        
+        <div id="lottemart" class = "activity">
+        <li><h3>Buy snacks at Lotte Mart</h3>
+          <img src="https://insideretail.asia/wp-content/uploads/2020/09/Lotte-Mart-Busan.jpg" class="p-3">
+          <h5 class="p-3">
+            Lotte Mart is the place to buy all the Korean snacks you can ever dream of. Bring a big bag along because you’ll need to fill it up with MarketO brownies, tteokbokki crackers, Lotte biscuit sticks and all the other delicious Korean goodies!
+          </h5>
+          <h6 class="p-3"><i>
+            Getting to Lotte Mart outlet at Seoul Station: Seoul Station (Subway Line 1 and 4), Exit 1.
+          </i></h6>
+        </li></div>
+        
+        <div id="namsancable" class = "activity">
+        <li><h3>Take the cable car up Mount Namsan</h3>
+          <img src="https://lh3.googleusercontent.com/proxy/zuPBKZu0dZissVa_-AaI2Nwj-MB-Ra5xR50QhGNpgQu0UrqZZs4N1L7iVwmGkSU6zgSZJmmoc-gPDj7-GnoKzjJ-nN_bLXWmT-D7S2dBqEMdShRe4Ne88mXuI9mWmZFTxiuBPFXuwHdsA4Xc8-m-PVa0KKQ" class="p-3">
+          <h5 class="p-3">
+            Home to the N Seoul Tower, Mount Namsan is a must-visit attraction in Seoul. While Mount Namsan is a mere 237 metres at its peak, the athletically challenged among us (like me) may not be so keen on climbing it. Fret not – there is a cable car to shuttle you there! At the top, enjoy the city views or go even higher up the N Seoul Tower’s observatory.
+          </h5>
+          <h6 class="p-3"><i>
+            Getting there: From Myeong-dong Station (Subway Line 4), walk for about 15 minutes towards Pacific Hotel, and continue straight from there. The boarding point for the cable car will be visible.
+          </i></h6>
+        </li></div>
+        
+        <div id="insadongsouvenirs" class = "activity">
+        <li><h3>Buy traditional souvenirs at Insadong</h3>
+          <img src="https://zafigo.com/wp-content/uploads/2016/09/Insadong-Souvenirs.jpg" class="p-3">
+          <h5 class="p-3">
+            If you’re planning on buying traditional goods, head to Insadong! There is one main road in Insadong lined with booths, shops, galleries, teahouses and restaurants. Be sure to wander into the alleyways to discover hidden charms and unexpected gems.
+          </h5>
+          <h6 class="p-3"><i>
+            Getting there: 240 Olympic-ro Songpa-Gu, Seoul, Korea. The park is connected to Jamsil Station on Line 2 and Line 8 of the Subway. Take Exit 4 and head to Lotte World.
+          </i></h6>
+        </li></div>
+        
+        <div id="dongdaemunt" class = "activity">
+        <li><h3>View an exhibition at Dongdaemun Design Plaza</h3>
+          <img src="https://files.structurae.net/files/photos/1/dongdaemun_design_plaza_on_april_2014.jpg" class="p-3">
+          <h5 class="p-3">
+            The Dongdaemun Design Plaza (DDP) is a new attraction in Seoul and it is a venue for events, exhibitions and shows related to the design industry. When I was there, the “Andy Warhol Live” exhibition, which features about 400 of Andy Warhol’s artworks, was ongoing. On your visit to Seoul, be sure to check whether there is anything happening in DDP that suits your interests!
+          </h5>
+          <h6 class="p-3"><i>
+            Getting there: Dongdaemun History & Culture Park Station (Subway Line 2, 4 and 5), Exit 1.
+          </i></h6>
+        </li>
+
+        </div>
+      </ul>
+    </div>
+
+    <div class="col-md-4 p-3 ">
+      
+      <iframe style=" margin-top: 5px;" width="100%" height="auto" src="https://www.youtube.com/embed/oHUD162uWD0" title="YouTube video player" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <iframe style=" margin-top: 5px;" width="100%" height="auto" src="https://www.youtube.com/embed/KCR37fonhw0" 
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+
+      <div class="card p-3">
+        <div class="card-body text-center">
+          <h2>Subscribe To Our Newsletter</h4>
+            <div class="input-group news-input ">
+              <input type="text" class="form-control" placeholder="Enter Email" id="news"/>
+              <button class="btn  btn-lg" type="button">Submit</button>
+            </div>
+        </div>
+      </div>
+
+      <img src="ad2.png" style="width: 100%; margin-top: 5px;" >
+    </div>
+  </div>
+</div>
+</section>
+
+  
+
+
+     <!-- Contact & Map--> 
+     <section class="p-5 contact" style="color: rgb(236, 234, 198)">
+      <div class="container">
+        
+        <div class="row g-4">
+  
+          <div class="col-md">
+            <div id='map'></div>
+          </div>
+    
+            <div class="col-md" style="color: rgb(236, 234, 198);">
+            <div class="row">
+             <div class="col">
+              <h4 class="text-start ">Site</h4>
+              <h6><a href="index.html">Homepage</a></h6>
+            <h6><a href="activity.html">Activities</a></h6>
+            <h6><a href="bookings.html">Bookings</a></h6>
+            <h6><a href="explore.html">Explore</a></h6>
+              
+  
+              <h4 class="text-start">Follow us</h4>
+               <p class="g-3" style="display:inline-flex;">
+              <svg  class="m-2" xlmns:svg="http://www.w3.org/2000/svg" width="40"height="40"viewBox="0 0 39.459057 39.459057">
+     
+                <g transform="translate(-58.964286,2.2678571)">
+                <a xlink:href="activity.html"> 
+                 <rect
+              style="fill:rgb(124, 126, 107);fill-rule:evenodd;stroke:rgb(236, 234, 198);stroke-width:4.04637;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+              id="rect854"
+              width="35.412685"
+              height="35.412685"
+              x="60.912704"
+              y="0.43651462"
+              ry="10.082317"
+              rx="9.5758724" />
+              <rect
+              style="fill:rgb(124, 126, 107);fill-rule:evenodd;stroke:rgb(236, 234, 198);stroke-width:3.432;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+              id="rect854-3"
+              width="14.61458"
+              height="14.61458"
+              x="71.22142"
+              y="11.287257"
+              ry="7.3072901"
+              rx="7.3072901" />
+                <ellipse
+                style="fill:rgb(236, 234, 198);fill-opacity:1;stroke:none;stroke-width:45.4658;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                id="path911"
+                cx="87.973969"
+                cy="8.126483"
+                rx="2.5513394"
+                ry="2.4568453" />
+                </a>
+                </g>
+             </svg>
+      
+             <svg class="m-2" width="40" height="40" viewBox="0 0 40.065773 40.065773" xlmns:svg="http://www.w3.org/2000/svg">
+                <g transform="translate(-1.1337813,-1.1337802)">
+                <a xlink:href="activity.html"> 
+                <path
+                id="path2049"
+                style="fill:rgb(236, 234, 198); fill-opacity:1;stroke-width:2.65541;stroke-linecap:round;stroke-linejoin:round"
+                d="M 21.166664,1.1337802 C 10.102774,1.1336982 1.1336983,10.102774 1.1337813,21.166665 c 2.64e-4,10.874909 8.676943,19.76339 19.5486727,20.02617 V 28.198276 h -3.19722 v -5.636863 h 3.19722 v -2.040702 c 0,-2.465636 0.22526,-4.250978 0.6749,-5.356262 0.46629,-1.105286 1.20726,-1.972747 2.22312,-2.60191 1.03251,-0.62916 2.29786,-0.943612 3.79667,-0.943612 1.63203,0 3.23118,0.306133 4.7966,0.918292 l -0.74982,4.999177 c -0.9326,-0.272071 -1.82338,-0.408244 -2.67271,-0.408244 -0.81602,0 -1.40716,0.238046 -1.77353,0.714169 -0.36638,0.476123 -0.54932,1.411671 -0.54932,2.80603 v 1.913062 h 4.29637 v 5.636863 h -4.29637 v 12.297439 c 8.71998,-2.37361 14.77102,-10.291778 14.77119,-19.32905 8e-5,-11.063891 -8.969,-20.0329688 -20.03289,-20.0328848 z m 0,40.0657748 c -0.16142,-2.7e-4 -0.32284,-0.003 -0.48421,-0.007 0,0 2.26157,0.007 0.48421,0.007 z"
+                sodipodi:nodetypes="cccccccsccsccssscccccccccc" />
+                </a>
+               </g>
+             </svg> 
+      
+             <svg class="m-2" xlmns:svg="http://www.w3.org/2000/svg"  width="50" height="50" viewBox="0 0 54.806473 35.907879">
+               <g transform="translate(-0.56699805,-0.94487)">
+               <a xlink:href="activity.html"> 
+                <path 
+                id="rect844"
+                style="fill:rgb(236, 234, 198);fill-opacity:1;fill-rule:evenodd;stroke-width:0.264583"
+                d="m 14.173919,0.94487 c -7.53836,0 -13.60692095,4.42396 -13.60692095,9.91877 v 16.07085 c 0,5.49482 6.06856095,9.91826 13.60692095,9.91826 h 27.59211 c 7.53836,0 13.60744,-4.42344 13.60744,-9.91826 V 10.86364 c 0,-5.49481 -6.06908,-9.91877 -13.60744,-9.91877 z m 9.07128,9.38237 15.875,9.16585 -15.875,9.16533 z" />
+                </a>
+                </g>
+            </svg></p>
+            
+            <h4 class="text-start">Contact Us <a href="contact.html">Here</a> </h4>
+           </div>
+           <div class="col">
+             <div>
+              <a href="index.html"><img src="logo2.svg" alt="yeohaeng travel seoul" class="justify-content-start" style="width:100%;"></a>
+              <p class="text-start" style="margin-top: 5%;">
+                Your friendly Seoul travel site.
+              </p>
+             </div>
+           </div>
+          </row>
+        </div>
+      </div> 
+     </section>
+
+<!--Footer-->
+<footer class="p-2  text-center position-relative">
+  <div class="container">
+    <p class="lead">Copyright &copy; 2021 Rochelle Fernandes</p>
+
+    <a href="#" class="position-absolute bottom-0 end-0 p-5">
+      <i class="bi bi-arrow-up-circle h1"></i>
+    </a>
+  </div>
+</footer>
+
+
+<!--mapbox-->
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoicm9mZXJuczE2IiwiYSI6ImNrdHJqajQ4cTE2cnMyb21wbm5iOGt1bnUifQ.uIGNuBKxhutEOwJ_xoEqFQ';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11',
+center: [126.977969, 37.566535],
+zoom: 13
+})
+</script>
+
+<!-- Bootstrap JS -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+  crossorigin="anonymous"
+></script>
+
+</body>
+</html>
+
+
+
+
+

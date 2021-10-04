@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeohaeng Seoul</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport"  content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+  rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <!--Fonts-->
+  <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Nanum+Myeongjo' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet'>
+  
+  <!--Map-->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
+  <!--JQ-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="style.css">
+
+  
+</head>
+<body>
+
+<!--Navbar-->
+<nav class="navbar sticky-top fixed-top navbar-expand-lg">
+  <div class="container">
+      <a href="index.html" class="navbar-brand"><img src="logo2.svg" alt="yeohaeng travel seoul"></a>
+
+      <button class="navbar-toggler" type="button" 
+      data-bs-toggle="collapse" data-bs-target="#navmenu">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-5">
+              <li class="nav-item">
+                  <a href="bookings.html" class="nav-link" target="_blank">Bookings</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#one" class="nav-link" target="_blank">Activities</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="explore.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Explore
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="dobonggu.html">Dobong-gu</a></li>
+                  <li><a class="dropdown-item" href="dongdaemun.html">Dongdaemun-gu</a></li>
+                </ul>
+              </li>
+          </ul>
+
+          <form class="d-flex ms-auto"><!--ms auto pushes the element to the left (spacing)-->
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn" type="submit">Search</button>
+          </form>
+      
+      </div>
+  </div> 
+</nav>
+
+<!--form-->
+<section class="one p-3">
+  <form>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="text p-3">
+            <h1><b>Contact Us</b>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+              </svg></h1>
+          </div>
+  
+            <fieldset class="m-3">
+              
+            <div class="row">
+            <div class="col-md-4 m-1"><label for="fname_contact">Name:<span style="color:red">*</span></label><br>
+              <input type="text" id="fname_contact" placeholder="Your full name" required>
+            </div>
+            <div class="col-md-4 m-1">
+              <label for="email_contact">Email Address:<span style="color:red">*</span></label><br>
+              <input type="text" id="fname_contact" placeholder="Your Email address" required>  
+            </div>
+            <div class="col-md-4 m-1">
+            </div>
+           
+            <div class="row"> 
+              <div class="col-md-4 m-1">
+                <label for="subject_contact">Subject:<span style="color:red">*</span></label><br>
+                <input type="text" id="subject_contact" placeholder="What can we help you with?" required>  
+              </div>
+              <div class="col-md-4 m-1">
+                <label for="concern">Category:</label>
+                 <select id="concern" name="concern">
+                 <option value="general_query">General Query</option>
+                 <option value="website_feedback">Website Feedback</option>
+                 <option value="hotel_enquiry">Hotel Enquiry</option>
+                 </select>
+              </div>
+              <div class="col-md-4"></div> 
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-4 m-1">
+                <label for="message_contact">Message:</label><br>
+                <textarea placeholder="Tell us more details...">
+                </textarea>
+              </div>
+              <div class="col-md-4 m-1"></div>
+              <div class="col-md-4 m-1"></div> 
+            </div>
+            <div class="row">
+              <div class="col-md-4 m-1">
+                <input type="reset" class="btn" value="Reset">
+              </div>
+              <div class="col-md-4 m-1">
+                <input type="submit" class="btn" value="Submit">
+              </div>
+            </div>
+      
+      </div>
+      <div class="col-md-4">
+      </div>
+      </div>
+    </fieldset>
+  </form>
+</section>
+
+
+<!-- Contact & Map--> 
+<section class="p-5 contact" style="color: rgb(236, 234, 198)">
+  <div class="container">
+    
+    <div class="row g-4">
+
+      <div class="col-md">
+        <div id='map'></div>
+      </div>
+
+        <div class="col-md" style="color: rgb(236, 234, 198);">
+        <div class="row">
+         <div class="col">
+          <h4 class="text-start ">Site</h4>
+          <h6><a href="index.html">Homepage</a></h6>
+            <h6><a href="activity.html">Activities</a></h6>
+            <h6><a href="bookings.html">Bookings</a></h6>
+            <h6><a href="explore.html">Explore</a></h6>
+          
+
+          <h4 class="text-start">Follow us</h4>
+           <p class="g-3" style="display:inline-flex;">
+          <svg  class="m-2" xlmns:svg="http://www.w3.org/2000/svg" width="40"height="40"viewBox="0 0 39.459057 39.459057">
+ 
+            <g transform="translate(-58.964286,2.2678571)">
+            <a xlink:href="activity.html"> 
+             <rect
+          style="fill:rgb(124, 126, 107);fill-rule:evenodd;stroke:rgb(236, 234, 198);stroke-width:4.04637;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+          id="rect854"
+          width="35.412685"
+          height="35.412685"
+          x="60.912704"
+          y="0.43651462"
+          ry="10.082317"
+          rx="9.5758724" />
+          <rect
+          style="fill:rgb(124, 126, 107);fill-rule:evenodd;stroke:rgb(236, 234, 198);stroke-width:3.432;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+          id="rect854-3"
+          width="14.61458"
+          height="14.61458"
+          x="71.22142"
+          y="11.287257"
+          ry="7.3072901"
+          rx="7.3072901" />
+            <ellipse
+            style="fill:rgb(236, 234, 198);fill-opacity:1;stroke:none;stroke-width:45.4658;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+            id="path911"
+            cx="87.973969"
+            cy="8.126483"
+            rx="2.5513394"
+            ry="2.4568453" />
+            </a>
+            </g>
+         </svg>
+  
+         <svg class="m-2" width="40" height="40" viewBox="0 0 40.065773 40.065773" xlmns:svg="http://www.w3.org/2000/svg">
+            <g transform="translate(-1.1337813,-1.1337802)">
+            <a xlink:href="activity.html"> 
+            <path
+            id="path2049"
+            style="fill:rgb(236, 234, 198); fill-opacity:1;stroke-width:2.65541;stroke-linecap:round;stroke-linejoin:round"
+            d="M 21.166664,1.1337802 C 10.102774,1.1336982 1.1336983,10.102774 1.1337813,21.166665 c 2.64e-4,10.874909 8.676943,19.76339 19.5486727,20.02617 V 28.198276 h -3.19722 v -5.636863 h 3.19722 v -2.040702 c 0,-2.465636 0.22526,-4.250978 0.6749,-5.356262 0.46629,-1.105286 1.20726,-1.972747 2.22312,-2.60191 1.03251,-0.62916 2.29786,-0.943612 3.79667,-0.943612 1.63203,0 3.23118,0.306133 4.7966,0.918292 l -0.74982,4.999177 c -0.9326,-0.272071 -1.82338,-0.408244 -2.67271,-0.408244 -0.81602,0 -1.40716,0.238046 -1.77353,0.714169 -0.36638,0.476123 -0.54932,1.411671 -0.54932,2.80603 v 1.913062 h 4.29637 v 5.636863 h -4.29637 v 12.297439 c 8.71998,-2.37361 14.77102,-10.291778 14.77119,-19.32905 8e-5,-11.063891 -8.969,-20.0329688 -20.03289,-20.0328848 z m 0,40.0657748 c -0.16142,-2.7e-4 -0.32284,-0.003 -0.48421,-0.007 0,0 2.26157,0.007 0.48421,0.007 z"
+            sodipodi:nodetypes="cccccccsccsccssscccccccccc" />
+            </a>
+           </g>
+         </svg> 
+  
+         <svg class="m-2" xlmns:svg="http://www.w3.org/2000/svg"  width="50" height="50" viewBox="0 0 54.806473 35.907879">
+           <g transform="translate(-0.56699805,-0.94487)">
+           <a xlink:href="activity.html"> 
+            <path 
+            id="rect844"
+            style="fill:rgb(236, 234, 198);fill-opacity:1;fill-rule:evenodd;stroke-width:0.264583"
+            d="m 14.173919,0.94487 c -7.53836,0 -13.60692095,4.42396 -13.60692095,9.91877 v 16.07085 c 0,5.49482 6.06856095,9.91826 13.60692095,9.91826 h 27.59211 c 7.53836,0 13.60744,-4.42344 13.60744,-9.91826 V 10.86364 c 0,-5.49481 -6.06908,-9.91877 -13.60744,-9.91877 z m 9.07128,9.38237 15.875,9.16585 -15.875,9.16533 z" />
+            </a>
+            </g>
+        </svg></p>
+        
+        <h4 class="text-start">Contact Us <a href="contact.html">Here</a> </h4>
+       </div>
+       <div class="col">
+         <div>
+          <a href="index.html"><img src="logo2.svg" alt="yeohaeng travel seoul" class="justify-content-start" style="width:100%;"></a>
+          <p class="text-start" style="margin-top: 5%;">
+            Your friendly Seoul travel site.
+          </p>
+         </div>
+       </div>
+      </row>
+    </div>
+  </div> 
+ </section>
+
+<!--Footer-->
+<footer class="p-2  text-center position-relative">
+  <div class="container">
+    <p class="lead">Copyright &copy; 2021 Rochelle Fernandes</p>
+
+    <a href="#" class="position-absolute bottom-0 end-0 p-5">
+      <i class="bi bi-arrow-up-circle h1"></i>
+    </a>
+  </div>
+</footer>
+
+
+<!--mapbox-->
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoicm9mZXJuczE2IiwiYSI6ImNrdHJqajQ4cTE2cnMyb21wbm5iOGt1bnUifQ.uIGNuBKxhutEOwJ_xoEqFQ';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11',
+center: [126.977969, 37.566535],
+zoom: 13
+})
+</script>
+
+<!-- Bootstrap JS -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+  crossorigin="anonymous"
+></script>
+
+</body>
+</html>
