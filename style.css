@@ -3,6 +3,28 @@ body
   overflow-x: hidden
 }
 
+.logo
+{
+  width: 7vw;
+  height: auto;
+}
+
+@media screen and (max-width:800px) {
+  
+.logo 
+{
+  width: 16vw;
+  height: auto;
+}}
+
+@media screen and (max-width:600px) {
+  
+  .logo
+  {
+    width: 25vw;
+    height: auto;
+  }}
+
 /*Nav*/
 
       .navbar-toggler-icon
@@ -257,7 +279,7 @@ body
 
       .activities
       {
-       display: flex;
+       display: flexbox;
       }
 
       .activity
