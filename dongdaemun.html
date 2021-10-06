@@ -35,7 +35,7 @@
 <!--Navbar-->
 <nav class="navbar sticky-top fixed-top navbar-expand-lg">
   <div class="container">
-      <a href="index.html" class="navbar-brand"><img src="logo2.svg" alt="yeohaeng travel seoul"></a>
+      <a href="index.html" class="navbar-brand"><img src="logo2.png" class="logo" alt="yeohaeng travel seoul"></a>
 
       <button class="navbar-toggler" type="button" 
       data-bs-toggle="collapse" data-bs-target="#navmenu">
@@ -48,13 +48,11 @@
                   <a href="bookings.html" class="nav-link" target="_blank">Bookings</a>
               </li>
               <li class="nav-item">
-                  <a href="#one" class="nav-link" target="_blank">Activities</a>
+                  <a href="activity.html" class="nav-link" target="_blank">Activities</a>
               </li>
-              <li class="nav-item">
-                <a href="explore.html" class="nav-link" target="_blank">Explore</a>
-            </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="explore.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Explore
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="dobonggu.html">Dobong-gu</a></li>
@@ -62,6 +60,11 @@
                 </ul>
               </li>
           </ul>
+
+          <form class="d-flex ms-auto"><!--ms auto pushes the element to the left (spacing)-->
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn" type="submit">Search</button>
+          </form>
       
       </div>
   </div> 
@@ -114,27 +117,7 @@
    </ul>
  </div>
 
-  <div class="col-md-4 p-3 ">
-   
-   <iframe style=" margin-top: 5px;" width="100%" height="auto" src="https://www.youtube.com/embed/oHUD162uWD0" title="YouTube video player" 
-   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-   <iframe style=" margin-top: 5px;" width="100%" height="auto" src="https://www.youtube.com/embed/KCR37fonhw0" 
-   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-   allowfullscreen></iframe>
-
-   <div class="card p-3">
-     <div class="card-body text-center">
-       <h2>Subscribe To Our Newsletter</h4>
-         <div class="input-group news-input ">
-           <input type="text" class="form-control" placeholder="Enter Email" id="news"/>
-           <button class="btn  btn-lg" type="button">Submit</button>
-         </div>
-     </div>
-   </div>
-
-   <img src="ad2.png" style="width: 100%; margin-top: 5px;" >
- </div>
 </div>
 </section>
 
@@ -267,7 +250,7 @@
        </div>
        <div class="col">
          <div>
-          <a href="index.html"><img src="logo2.svg" alt="yeohaeng travel seoul" class="justify-content-start" style="width:100%;"></a>
+          <a href="index.html"><img src="logo2.png" class="logo" alt="yeohaeng travel seoul" class="justify-content-start" style="width:100%;"></a>
           <p class="text-start" style="margin-top: 5%;">
             Your friendly Seoul travel site.
           </p>
