@@ -312,7 +312,17 @@ body
         background-color: rgb(255, 255, 255);
         font-family: Karla;
         font-weight: bold;
-      }      
+      }    
+  
+       @media  screen and (max-width: 600px) {
+      .covimg{
+       max-width: 80%;
+      }}
+
+      @media  screen and (max-width: 900px) {
+      .covimg{
+       max-width: 80%;
+    }}
       
       .contact{
         background-color: rgb(124, 126, 107);
